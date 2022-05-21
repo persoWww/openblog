@@ -2,6 +2,7 @@ body{
 	margin:0px;
 	background:var(--bodyback);
 	font-family:var(--bodyFont);
+    color:var(--bodyFontColor);
     a{
         color: var(--linkColor);
         &:hover{
@@ -19,6 +20,7 @@ body{
         cursor: pointer;
         h1{
             padding: 10px;
+            color: var(--titleColor);
         }
     }
     #homecontent{

@@ -2,6 +2,7 @@ body {
   margin: 0px;
   background: var(--bodyback);
   font-family: var(--bodyFont);
+  color: var(--bodyFontColor);
 }
 body a {
   color: var(--linkColor);
@@ -21,6 +22,7 @@ body #bandeau {
 }
 body #bandeau h1 {
   padding: 10px;
+  color: var(--titleColor);
 }
 body #homecontent {
   background: var(--backColorContent);
