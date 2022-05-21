@@ -3,6 +3,7 @@
 
  - définir le title: dans /article.html et /index.html , écrire les balises titles dans les headers.
  - définir la photo en fond de bannière: /assets/img/banner.png
+ - optionnel: redéfinir les variables dans /assets/styles/root.css
 
  # fonctionnement régulier
 
