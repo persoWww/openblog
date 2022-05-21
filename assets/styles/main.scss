@@ -1,11 +1,13 @@
-:root{
-    --writeblue: #2424ff;
-}
-
 body{
 	margin:0px;
-	background:#b0b8ff;
-	font-family:sans-serif;
+	background:var(--bodyback);
+	font-family:var(--bodyFont);
+    a{
+        color: var(--linkColor);
+        &:hover{
+            color: var(--linkColorHover);
+        }
+    }
     #bandeau{
         background-image: url('../img/banner.png');
         background-position: center;
@@ -20,8 +22,8 @@ body{
         }
     }
     #homecontent{
-        background:white;
-        border : 1px solid var(--writeblue);
+        background:var(--backColorContent);
+        border : 1px solid var(--lineColor);
         padding: 2rem;
         margin: 1rem;
         h2{
@@ -30,7 +32,7 @@ body{
             &.titleOfLastArticles{
                 margin: 6rem 0 3rem 0;
                 padding-top: 2rem;
-                border-top: 3px double  var(--writeblue);
+                border-top: 3px double  var(--lineColor);
             }
         }
         .parentcard{
@@ -44,34 +46,34 @@ body{
                 max-width: 100%;
                 padding: 0rem 1rem 3rem 1rem;
                 font-size: 14px;
-                &.latest{
-                    min-width: 100%;
-                    font-size: 20px;
-                }
-                &.second{
-                    flex: 20;
-                    font-size: 17px;
-                    min-width: calc(50% - 3rem);
-                    @media (max-width: 700px) {
-                        min-width: 100%;
+                min-width: 100%;
+                font-size: 20px;
+                display: flex;
+                .text{
+                    a.title{
+                        font-weight: bolder;
+                        text-decoration: none;
+                        font-size: 1.2em;
+                        display: block;
+                    }
+                    .meta{
+                        font-size: 0.7em;
+                        margin: 0;
+                    }
+                    .acroch{
+                        margin-bottom: 0;
                     }
                 }
-                a.title{
-                    color: var(--writeblue);
-                    font-weight: bolder;
-                    text-decoration: none;
-                    font-size: 1.5em;
-                    display: block;
-                    &:hover{
-                        color: red;
+                img{
+                    width: 8rem;
+                    height: 8rem;
+                    margin-right: 0.5rem;
+                }
+                @media (max-width:600px) {
+                    flex-wrap: wrap;
+                    img{
+                        margin: auto;
                     }
-                }
-                .meta{
-                    font-size: 0.8em;
-                    margin: 0;
-                }
-                .acroch{
-                    margin-bottom: 0;
                 }
             }
         }

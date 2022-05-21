@@ -9,6 +9,7 @@
     <script src="./assets/scripts/header.js"></script>
     <script src="./assets/scripts/footer.js"></script>
     <script src="./assets/scripts/data.js"></script>
+    <link rel="stylesheet" href="./assets/styles/root.css">
     <link rel="stylesheet" href="./assets/styles/main.css">
 </head>
 <body>
@@ -17,20 +18,14 @@
         <script>
             for (let index = 0; index < articles.length; index++) {
                 const element = articles[index];
-                let theClass = ``;
-                if (index < 3) {
-                    theClass = ` second`;
-                }
-                if (index === 0) {
-                    theClass = ` latest`;
-                }
-                console.log(index);
-                console.log(theClass);
                 document.write(`
-                    <div class="card${theClass}">
-                        <a class="title" href="article.html?id=${element.id}">${element.title}</a><br>
-                        <p class="meta">paru le: ${element.date} - ecris par: ${element.author}</p>
-                        <p class="acroch">${element.acroche}</p>
+                    <div class="card">
+                        <img src="./assets/img/thumbnails/${element.id}.${element.extthumb}">
+                        <div class="text">
+                            <a class="title" href="article.html?id=${element.id}">${element.title}</a><br>
+                            <p class="meta">paru le: ${element.date} - ecris par: ${element.author}</p>
+                            <p class="acroch">${element.acroche}</p>
+                        </div>
                     </div>
                 `);
             }

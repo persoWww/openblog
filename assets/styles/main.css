@@ -1,11 +1,13 @@
-:root {
-  --writeblue: #2424ff;
-}
-
 body {
   margin: 0px;
-  background: #b0b8ff;
-  font-family: sans-serif;
+  background: var(--bodyback);
+  font-family: var(--bodyFont);
+}
+body a {
+  color: var(--linkColor);
+}
+body a:hover {
+  color: var(--linkColorHover);
 }
 body #bandeau {
   background-image: url("../img/banner.png");
@@ -21,8 +23,8 @@ body #bandeau h1 {
   padding: 10px;
 }
 body #homecontent {
-  background: white;
-  border: 1px solid var(--writeblue);
+  background: var(--backColorContent);
+  border: 1px solid var(--lineColor);
   padding: 2rem;
   margin: 1rem;
 }
@@ -33,7 +35,7 @@ body #homecontent h2 {
 body #homecontent h2.titleOfLastArticles {
   margin: 6rem 0 3rem 0;
   padding-top: 2rem;
-  border-top: 3px double var(--writeblue);
+  border-top: 3px double var(--lineColor);
 }
 body #homecontent .parentcard {
   display: flex;
@@ -47,35 +49,33 @@ body #homecontent .parentcard .card {
   max-width: 100%;
   padding: 0rem 1rem 3rem 1rem;
   font-size: 14px;
-}
-body #homecontent .parentcard .card.latest {
   min-width: 100%;
   font-size: 20px;
+  display: flex;
 }
-body #homecontent .parentcard .card.second {
-  flex: 20;
-  font-size: 17px;
-  min-width: calc(50% - 3rem);
-}
-@media (max-width: 700px) {
-  body #homecontent .parentcard .card.second {
-    min-width: 100%;
-  }
-}
-body #homecontent .parentcard .card a.title {
-  color: var(--writeblue);
+body #homecontent .parentcard .card .text a.title {
   font-weight: bolder;
   text-decoration: none;
-  font-size: 1.5em;
+  font-size: 1.2em;
   display: block;
 }
-body #homecontent .parentcard .card a.title:hover {
-  color: red;
-}
-body #homecontent .parentcard .card .meta {
-  font-size: 0.8em;
+body #homecontent .parentcard .card .text .meta {
+  font-size: 0.7em;
   margin: 0;
 }
-body #homecontent .parentcard .card .acroch {
+body #homecontent .parentcard .card .text .acroch {
   margin-bottom: 0;
+}
+body #homecontent .parentcard .card img {
+  width: 8rem;
+  height: 8rem;
+  margin-right: 0.5rem;
+}
+@media (max-width: 600px) {
+  body #homecontent .parentcard .card {
+    flex-wrap: wrap;
+  }
+  body #homecontent .parentcard .card img {
+    margin: auto;
+  }
 }

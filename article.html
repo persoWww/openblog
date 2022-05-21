@@ -9,6 +9,7 @@
     <script src="./assets/scripts/header.js"></script>
     <script src="./assets/scripts/footer.js"></script>
     <script src="./assets/scripts/data.js"></script>
+    <link rel="stylesheet" href="./assets/styles/root.css">
     <link rel="stylesheet" href="./assets/styles/main.css">
 </head>
 <body>
@@ -25,9 +26,12 @@
                 console.log(index);
                 document.write(`
                     <div class="card">
-                        <a class="title" href="article.html?id=${element.id}">${element.title}</a><br>
-                        <p class="meta">paru le: ${element.date} - ecris par: ${element.author}</p>
-                        <p class="acroch">${element.acroche}</p>
+                        <img src="./assets/img/thumbnails/${element.id}.${element.extthumb}">
+                        <div class="text">
+                            <a class="title" href="article.html?id=${element.id}">${element.title}</a><br>
+                            <p class="meta">paru le: ${element.date} - ecris par: ${element.author}</p>
+                            <p class="acroch">${element.acroche}</p>
+                        </div>
                     </div>
                 `);
             }
@@ -45,7 +49,7 @@
         document.getElementById('theTitle').innerText = theArticleObject.title;
         document.getElementById('theMeta').innerText = `paru le: ${theArticleObject.date} - ecris par: ${theArticleObject.author}`;
         document.getElementById('theAcroch').innerText = theArticleObject.acroche;
-        document.getElementById('theContent').innerText = theArticleObject.content;
+        document.getElementById('theContent').innerHTML = theArticleObject.content;
     </script>
     <script>document.write(footer);</script>
 </body>
