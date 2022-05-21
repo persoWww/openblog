@@ -24,6 +24,14 @@ body #bandeau h1 {
   padding: 10px;
   color: var(--titleColor);
 }
+body .menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body .menu a {
+  margin: 2px 7px;
+}
 body #homecontent {
   background: var(--backColorContent);
   border: 1px solid var(--lineColor);
@@ -38,6 +46,13 @@ body #homecontent h2.titleOfLastArticles {
   margin: 6rem 0 3rem 0;
   padding-top: 2rem;
   border-top: 3px double var(--lineColor);
+}
+body #homecontent #theThumbnail {
+  height: 300px;
+  width: auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center left;
 }
 body #homecontent .parentcard {
   display: flex;
@@ -72,6 +87,8 @@ body #homecontent .parentcard .card img {
   width: 8rem;
   height: 8rem;
   margin-right: 0.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (max-width: 600px) {
   body #homecontent .parentcard .card {
@@ -80,4 +97,9 @@ body #homecontent .parentcard .card img {
   body #homecontent .parentcard .card img {
     margin: auto;
   }
+}
+body footer {
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
 }

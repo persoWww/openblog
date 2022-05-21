@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/ico/icone.png" />
+    <title>openblog test 1.1</title>
+    <script src="./assets/scripts/data.js"></script>
+    <script src="./assets/scripts/header.js"></script>
+    <script src="./assets/scripts/footer.js"></script>
+    <link rel="stylesheet" href="./assets/styles/root.css">
+    <link rel="stylesheet" href="./assets/styles/main.css">
+</head>
+<body>
+    <script>document.write(header);</script>
+    <h1 id="theTitle"></h1>
+    <p class="articleContent" id="theContent"></p>
+    <script>
+        function S_GET(id){
+            var a = new RegExp(id+"=([^&#=]*)");
+            return decodeURIComponent(a.exec(window.location.search)[1]);
+        }
+        const theId = S_GET("id");
+        const theIndex = pages.findIndex((pages) => pages.id==theId);
+        const theArticleObject = pages[theIndex];
+        console.log(theArticleObject);
+        document.getElementById('theTitle').innerText = theArticleObject.title;
+        document.getElementById('theContent').innerHTML = theArticleObject.content;
+    </script>
+    <script>document.write(footer);</script>
+</body>
+</html>

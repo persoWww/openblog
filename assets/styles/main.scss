@@ -23,6 +23,14 @@ body{
             color: var(--titleColor);
         }
     }
+    .menu{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        a{
+            margin: 2px 7px;
+        }
+    }
     #homecontent{
         background:var(--backColorContent);
         border : 1px solid var(--lineColor);
@@ -36,6 +44,13 @@ body{
                 padding-top: 2rem;
                 border-top: 3px double  var(--lineColor);
             }
+        }
+        #theThumbnail{
+            height: 300px;
+            width: auto;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center left;
         }
         .parentcard{
             display: flex;
@@ -70,6 +85,7 @@ body{
                     width: 8rem;
                     height: 8rem;
                     margin-right: 0.5rem;
+                    object-fit: cover;
                 }
                 @media (max-width:600px) {
                     flex-wrap: wrap;
@@ -79,5 +95,10 @@ body{
                 }
             }
         }
+    }
+    footer{
+        display: flex;
+        justify-content: center;
+        padding: 3rem;
     }
 }
