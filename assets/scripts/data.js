@@ -2,7 +2,7 @@
 
 const articles = [
     {
-        title:"notes de la version 1.0 de freesoft.net",
+        title:"notes de la version 1.1 de freesoft.net",
         extthumb:'png',
         id:"52100gh124r",
         date:"2022-05-21",
@@ -17,6 +17,7 @@ const articles = [
         
          - définir le title: dans '/article.html', '/page.html' et '/index.html' , écrire les balises titles dans les headers.
          - définir la photo en fond de bannière: '/assets/img/banner.png'
+         - définir la favicon: '/assets/ico/icone.png'
          - optionnel: redéfinir les variables dans '/assets/styles/root.css'
         
          # fonctionnement régulier

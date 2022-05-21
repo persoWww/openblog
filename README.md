@@ -7,6 +7,7 @@
 
  - définir le title: dans `/article.html`, `/page.html` et `/index.html` , écrire les balises titles dans les headers.
  - définir la photo en fond de bannière: `/assets/img/banner.png`
+ - définir la favicon: `/assets/ico/icone.png`
  - optionnel: redéfinir les variables dans `/assets/styles/root.css`
 
  # fonctionnement régulier
@@ -19,10 +20,16 @@
 adaptation du modèle d'inspiration
 
 # note version 1.0 (2022-05-21)
-créations des variables css et du front system de thumbnails. ajoute la possibilitée d'ajouter du code (innerTEXT deviens innerHTML) dans les corps d'articles.
+créations des variables css et du front system de thumbnails. ajoute la possibilité d'ajouter du code (innerTEXT deviens innerHTML) dans les corps d'articles.
 
 # note version 1.1 (2022-05-21)
  - thumbnail des articles sur les pages articles
- - création systeme pages:
+ - création système pages:
     - const dans data.js
     - fichier `page.html`
+
+# note version 1.2 (en cours de developpement)
+ - ajout de la possibilités de modif la favicon.
+ - (projet) champ de recherche
+ - (projet) triller les articles sur index.
+ - (projet) créer une page avec un système tinyMce pour généré les codes de mise en page des articles/pages. plugin source code?
