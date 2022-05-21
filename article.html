@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/ico/icone.png" />
+    <title>openblog test 0.1</title>
+    <script src="./assets/scripts/header.js"></script>
+    <script src="./assets/scripts/footer.js"></script>
+    <script src="./assets/scripts/data.js"></script>
+    <link rel="stylesheet" href="./assets/styles/main.css">
+</head>
+<body>
+    <script>document.write(header);</script>
+    <h1 id="theTitle"></h1>
+    <p class="meta" id="theMeta"></p>
+    <p class="articleAcroch" id="theAcroch"></p>
+    <p class="articleContent" id="theContent"></p>
+    <h2 class="titleOfLastArticles">Derniers articles:</h2>
+    <div class="parentcard">
+        <script>
+            for (let index = 0; index < 6; index++) {
+                const element = articles[index];
+                console.log(index);
+                document.write(`
+                    <div class="card">
+                        <a class="title" href="article.html?id=${element.id}">${element.title}</a><br>
+                        <p class="meta">paru le: ${element.date} - ecris par: ${element.author}</p>
+                        <p class="acroch">${element.acroche}</p>
+                    </div>
+                `);
+            }
+        </script>
+    </div>
+    <script>
+        function S_GET(id){
+            var a = new RegExp(id+"=([^&#=]*)");
+            return decodeURIComponent(a.exec(window.location.search)[1]);
+        }
+        const theId = S_GET("id");
+        const theIndex = articles.findIndex((articles) => articles.id==theId);
+        const theArticleObject = articles[theIndex];
+        console.log(theArticleObject);
+        document.getElementById('theTitle').innerText = theArticleObject.title;
+        document.getElementById('theMeta').innerText = `paru le: ${theArticleObject.date} - ecris par: ${theArticleObject.author}`;
+        document.getElementById('theAcroch').innerText = theArticleObject.acroche;
+        document.getElementById('theContent').innerText = theArticleObject.content;
+    </script>
+    <script>document.write(footer);</script>
+</body>
+</html>

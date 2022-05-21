@@ -1,0 +1,79 @@
+:root{
+    --writeblue: #2424ff;
+}
+
+body{
+	margin:0px;
+	background:#b0b8ff;
+	font-family:sans-serif;
+    #bandeau{
+        background-image: url('../img/banner.png');
+        background-position: center;
+        background-size: cover;
+        min-height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        h1{
+            padding: 10px;
+        }
+    }
+    #homecontent{
+        background:white;
+        border : 1px solid var(--writeblue);
+        padding: 2rem;
+        margin: 1rem;
+        h2{
+            margin:0px;
+            padding:0px;
+            &.titleOfLastArticles{
+                margin: 6rem 0 3rem 0;
+                padding-top: 2rem;
+                border-top: 3px double  var(--writeblue);
+            }
+        }
+        .parentcard{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            .card{
+                flex: 1;
+                min-width: 18rem;
+                max-width: 100%;
+                padding: 0rem 1rem 3rem 1rem;
+                font-size: 14px;
+                &.latest{
+                    min-width: 100%;
+                    font-size: 20px;
+                }
+                &.second{
+                    flex: 20;
+                    font-size: 17px;
+                    min-width: calc(50% - 3rem);
+                    @media (max-width: 700px) {
+                        min-width: 100%;
+                    }
+                }
+                a.title{
+                    color: var(--writeblue);
+                    font-weight: bolder;
+                    text-decoration: none;
+                    font-size: 1.5em;
+                    display: block;
+                    &:hover{
+                        color: red;
+                    }
+                }
+                .meta{
+                    font-size: 0.8em;
+                    margin: 0;
+                }
+                .acroch{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
