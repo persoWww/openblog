@@ -38,7 +38,7 @@ const articles = [
             - const dans data.js
             - fichier 'page.html'
         
-        # note version 1.2 (en cours de developpement)
+        # note version 1.2 (2022-05-22)
          - ajout de la possibilités de modif la favicon.
          - création champ de recherche pour les articles
          - the_content pour la page d'accueil
