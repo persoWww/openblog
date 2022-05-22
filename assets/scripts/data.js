@@ -2,8 +2,8 @@
 
 const articles = [
     {
-        title:"notes de la version 1.1 de freesoft.net",
-        extthumb:'png',
+        title:"notes de la version 1.1 de openblog",
+        thumbnail:'52100gh124r.png',
         id:"52100gh124r",
         date:"2022-05-21",
         author:"dev",
@@ -23,20 +23,26 @@ const articles = [
          # fonctionnement régulier
         
           - post d'un article: 
-             - éditer '/assets/scripts/data.js'
+             - éditer '/assets/scripts/data.js' => contenu page acceueil = page dont le title est accueil.
              - thumbnail: '/assets/img/thumbnails/idDeLArticle.extthumb'
         
         # note version 0.1 openblog (2022-05-21)
         adaptation du modèle d'inspiration
         
         # note version 1.0 (2022-05-21)
-        créations des variables css et du front system de thumbnails. ajoute la possibilitée d'ajouter du code (innerTEXT deviens innerHTML) dans les corps d'articles.
+        créations des variables css et du front system de thumbnails. ajoute la possibilité d'ajouter du code (innerTEXT deviens innerHTML) dans les corps d'articles.
         
         # note version 1.1 (2022-05-21)
          - thumbnail des articles sur les pages articles
-         - création systeme pages:
+         - création système pages:
             - const dans data.js
-            - fichier 'page.html'</pre>`,
+            - fichier 'page.html'
+        
+        # note version 1.2 (en cours de developpement)
+         - ajout de la possibilités de modif la favicon.
+         - création champ de recherche pour les articles
+         - the_content pour la page d'accueil
+         - les thumbnails des articles doivent être noté dans data car pouvoir être réutilisé.</pre>`,
     },
 ];
 
@@ -47,5 +53,12 @@ const pages = [
         date: '2022-05-21',
         author: 'dev',
         content: `<b>ceci</b> est une page.`,
+    },
+    {
+        title: 'accueil',
+        id: 'ds2037p4',
+        date: '2022-05-22',
+        author: 'dev',
+        content: `hello! ceci est le contenu de la page d'accueil`,
     },
 ];

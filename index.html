@@ -16,21 +16,37 @@
     <script>document.write(header);</script>
     <div class="parentcard">
         <script>
-            for (let index = 0; index < articles.length; index++) {
-                const element = articles[index];
-                document.write(`
-                    <div class="card">
-                        <img src="./assets/img/thumbnails/${element.id}.${element.extthumb}">
-                        <div class="text">
-                            <a class="title" href="article.html?id=${element.id}">${element.title}</a><br>
-                            <p class="meta">paru le: ${element.date} - ecris par: ${element.author}</p>
-                            <p class="acroch">${element.acroche}</p>
-                        </div>
-                    </div>
-                `);
+            const theSearch = S_GET("s");
+            console.log(theSearch);
+            if (theSearch === '') {
+                for (let index = 0; index < articles.length; index++) {
+                    const element = articles[index];
+                    writeCardArticle(element);
+                }
+            } else {
+                let selectedArticles = [];
+                for (let index = 0; index < articles.length; index++) {
+                    const element = articles[index];
+                    if (element.title.indexOf(theSearch) != -1
+                    || element.author.indexOf(theSearch) != -1
+                    || element.acroche.indexOf(theSearch) != -1
+                    || element.content.indexOf(theSearch) != -1) {
+                        selectedArticles.push(element);
+                    }
+                }
+                for (let index = 0; index < selectedArticles.length; index++) {
+                    const element = selectedArticles[index];
+                    writeCardArticle(element);
+                }
             }
         </script>
     </div>
+    <script>
+        const accueilContent = pages.findIndex((pages) => pages.title === 'accueil');
+        const pageAccueilObject = pages[accueilContent];
+        document.write(pageAccueilObject.content)
+    </script>
     <script>document.write(footer);</script>
+    <script src="./assets/scripts/functions.js"></script>
 </body>
 </html>

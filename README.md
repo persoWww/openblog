@@ -13,7 +13,7 @@
  # fonctionnement régulier
 
   - post d'un article: 
-     - éditer `/assets/scripts/data.js`
+     - éditer `/assets/scripts/data.js` => contenu page acceueil = page dont le title est accueil.
      - thumbnail: `/assets/img/thumbnails/idDeLArticle.extthumb`
 
 # note version 0.1 openblog (2022-05-21)
@@ -30,9 +30,6 @@ créations des variables css et du front system de thumbnails. ajoute la possibi
 
 # note version 1.2 (en cours de developpement)
  - ajout de la possibilités de modif la favicon.
- - (projet) champ de recherche
- - (projet) triller les articles sur index.
- - (projet) créer une page avec un système tinyMce pour généré les codes de mise en page des articles/pages. plugin source code?
- - (projet) possibilité liens dans menu vers liens personnalisés, page automatiques étant une option
- - (projet) the_content pour la page d'accueil?
- - (projet) les thumbnails des articles doivent être noté dans data car pouvoir être réutilisé.
+ - création champ de recherche pour les articles
+ - the_content pour la page d'accueil
+ - les thumbnails des articles doivent être noté dans data car pouvoir être réutilisé.

@@ -9,6 +9,11 @@ body{
             color: var(--linkColorHover);
         }
     }
+    .search{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
     #bandeau{
         background-image: url('../img/banner.png');
         background-position: center;

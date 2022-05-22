@@ -10,6 +10,11 @@ body a {
 body a:hover {
   color: var(--linkColorHover);
 }
+body .search {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 body #bandeau {
   background-image: url("../img/banner.png");
   background-position: center;
