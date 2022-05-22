@@ -33,3 +33,6 @@ créations des variables css et du front system de thumbnails. ajoute la possibi
  - (projet) champ de recherche
  - (projet) triller les articles sur index.
  - (projet) créer une page avec un système tinyMce pour généré les codes de mise en page des articles/pages. plugin source code?
+ - (projet) possibilité liens dans menu vers liens personnalisés, page automatiques étant une option
+ - (projet) the_content pour la page d'accueil?
+ - (projet) les thumbnails des articles doivent être noté dans data car pouvoir être réutilisé.

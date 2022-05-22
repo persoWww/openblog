@@ -46,6 +46,6 @@ const pages = [
         id: '201f45',
         date: '2022-05-21',
         author: 'dev',
-        content: `ceci est une page.`,
+        content: `<b>ceci</b> est une page.`,
     },
 ];
