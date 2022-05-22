@@ -38,7 +38,7 @@
         document.getElementById('theMeta').innerText = `paru le: ${theArticleObject.date} - ecris par: ${theArticleObject.author}`;
         document.getElementById('theAcroch').innerText = theArticleObject.acroche;
         document.getElementById('theContent').innerHTML = theArticleObject.content;
-        document.getElementById('theThumbnail').style.backgroundImage = `url('./assets/img/thumbnails/${theArticleObject.id}.${theArticleObject.extthumb}')`;
+        document.getElementById('theThumbnail').style.backgroundImage = `url('./assets/img/thumbnails/${theArticleObject.thumbnail}')`;
     </script>
     <script>document.write(footer);</script>
     <script src="./assets/scripts/functions.js"></script>
