@@ -13,7 +13,7 @@ const articles = [
         
          - dans le terminal:
             - 'git clone git@github.com:persoWww/openblog.git' ou 'git clone https://github.com/persoWww/openblog.git'
-            - 'git checkout version_1.1'
+            - 'git checkout version_1.2'
         
          - définir le title: dans '/article.html', '/page.html' et '/index.html' , écrire les balises titles dans les headers.
          - définir la photo en fond de bannière: '/assets/img/banner.png'
