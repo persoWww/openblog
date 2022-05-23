@@ -82,12 +82,17 @@ body #homecontent .parentcard .card {
   min-width: 100%;
   font-size: 20px;
   display: flex;
+  cursor: pointer;
 }
-body #homecontent .parentcard .card .text a.title {
+body #homecontent .parentcard .card:hover {
+  color: var(--linkColorHover);
+}
+body #homecontent .parentcard .card .text h3.title {
   font-weight: bolder;
   text-decoration: none;
   font-size: 1.2em;
   display: block;
+  margin: 0;
 }
 body #homecontent .parentcard .card .text .meta {
   font-size: 0.7em;

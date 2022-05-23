@@ -1,9 +1,10 @@
 
 # SETUP
 
- - dans le terminal:
+ - dans le terminal avec git:
     - `git clone git@github.com:persoWww/openblog.git` ou `git clone https://github.com/persoWww/openblog.git`
     - `git checkout version_1.3`
+ - ou sans passer par le terminal: téléchargez `https://github.com/persoWww/openblog/archive/refs/heads/version_1.3.zip`
 
  - définir le title: dans `/article.html`, `/page.html` et `/index.html` , écrire les balises titles dans les headers.
  - définir la photo en fond de bannière: `/assets/img/banner.png`
@@ -34,17 +35,19 @@ créations des variables css et du front system de thumbnails. ajoute la possibi
  - the_content pour la page d'accueil
  - les thumbnails des articles doivent être noté dans data car pouvoir être réutilisé.
 
- # notes en prévision de la 1.3
+ # notes version 1.3 (2022-05-23)
  - [x] link vers index réecrites pour utilisation hors server.
  - [x] suppression de `assets/ico` pour tout mettre dans img.
  - [x] création d'un fichier de variables js pour les url d'images logo & banner => dans les variables `root.css`
  - [x] mise en place d'un logo dans la banière , avec une var associé dans `root.css`
- - [ ] revoir l'agencement des fichiers scripts
- - [ ] voir création catégories/tags pour les articles avec menu
- - [ ] voir responsive menu/header
- - [ ] content de index au dessus des cards?
+ - [x] revoir l'agencement des fichiers scripts
+ - [x] content de index au dessus des cards?
  - [x] quand search, pas de content dans index.
  - [x] augmenter les variables dans `root.css`, par ex menu droite-centre-gauche, border sur les cards,...
- - [ ] cards entièrement cliqubles.
+ - [x] cards entièrement cliqubles.
+
+ # notes en préévision de la 1.4
+ - [ ] voir création catégories/tags pour les articles avec menu
+ - [ ] voir responsive menu/header
  - [ ] pour les img/ico d'origines: remplacer par des images dont on es sur qu'elles sont libre de droit (créer une ico/ambiance propre)
  - [ ] voir pour passer les fichiers `index.html`, `article.html` et `page.html` sur 1 seule fichier pour centraliser les données du header.
