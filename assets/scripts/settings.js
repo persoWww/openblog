@@ -1,0 +1,4 @@
+const blogSettings = {
+    // favicon: '',
+    logo: '',
+};

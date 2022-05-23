@@ -1,4 +1,4 @@
-:root{
+:root {
     --linkColor: #2424ff;
     --linkColorHover: red;
     --lineColor: #2424ff;
@@ -7,4 +7,5 @@
     --backColorContent: white;
     --titleColor: black;
     --bodyFontColor: black;
+    --bannerBackground: url('../img/banner.png');
 }

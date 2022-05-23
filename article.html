@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./assets/ico/icone.png" />
+    <link rel="shortcut icon" href="./assets/img/icone.png" />
     <title>openblog test 1.1</title>
+    <script src="./assets/scripts/settings.js"></script>
     <script src="./assets/scripts/data.js"></script>
     <script src="./assets/scripts/header.js"></script>
     <script src="./assets/scripts/footer.js"></script>
     <link rel="stylesheet" href="./assets/styles/root.css">
     <link rel="stylesheet" href="./assets/styles/main.css">
 </head>
+
 <body>
-    <script>document.write(header);</script>
+    <script>
+        document.write(header);
+    </script>
     <div id="theThumbnail"></div>
     <h1 id="theTitle"></h1>
     <p class="meta" id="theMeta"></p>
@@ -31,7 +36,7 @@
     </div>
     <script>
         const theId = S_GET("id");
-        const theIndex = articles.findIndex((articles) => articles.id==theId);
+        const theIndex = articles.findIndex((articles) => articles.id == theId);
         const theArticleObject = articles[theIndex];
         console.log(theArticleObject);
         document.getElementById('theTitle').innerText = theArticleObject.title;
@@ -40,7 +45,10 @@
         document.getElementById('theContent').innerHTML = theArticleObject.content;
         document.getElementById('theThumbnail').style.backgroundImage = `url('./assets/img/thumbnails/${theArticleObject.thumbnail}')`;
     </script>
-    <script>document.write(footer);</script>
+    <script>
+        document.write(footer);
+    </script>
     <script src="./assets/scripts/functions.js"></script>
 </body>
+
 </html>

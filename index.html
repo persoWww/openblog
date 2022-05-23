@@ -1,23 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./assets/ico/icone.png" />
+    <link rel="shortcut icon" href="./assets/img/icone.png" />
     <title>openblog test 1.1</title>
+    <script src="./assets/scripts/settings.js"></script>
     <script src="./assets/scripts/data.js"></script>
     <script src="./assets/scripts/header.js"></script>
     <script src="./assets/scripts/footer.js"></script>
     <link rel="stylesheet" href="./assets/styles/root.css">
     <link rel="stylesheet" href="./assets/styles/main.css">
 </head>
+
 <body>
-    <script>document.write(header);</script>
-    <div class="parentcard">
+    <script>
+        document.write(header);
+    </script>
+    <p class="articleContent">
         <script>
             const theSearch = S_GET("s");
             console.log(theSearch);
+            if (theSearch === '') {
+                const accueilContent = pages.findIndex((pages) => pages.title === 'accueil');
+                const pageAccueilObject = pages[accueilContent];
+                document.write(pageAccueilObject.content)
+            }
+        </script>
+    </p>
+    <div class="parentcard">
+        <script>
             if (theSearch === '') {
                 for (let index = 0; index < articles.length; index++) {
                     const element = articles[index];
@@ -27,10 +41,10 @@
                 let selectedArticles = [];
                 for (let index = 0; index < articles.length; index++) {
                     const element = articles[index];
-                    if (element.title.indexOf(theSearch) != -1
-                    || element.author.indexOf(theSearch) != -1
-                    || element.acroche.indexOf(theSearch) != -1
-                    || element.content.indexOf(theSearch) != -1) {
+                    if (element.title.indexOf(theSearch) != -1 ||
+                        element.author.indexOf(theSearch) != -1 ||
+                        element.acroche.indexOf(theSearch) != -1 ||
+                        element.content.indexOf(theSearch) != -1) {
                         selectedArticles.push(element);
                     }
                 }
@@ -42,11 +56,9 @@
         </script>
     </div>
     <script>
-        const accueilContent = pages.findIndex((pages) => pages.title === 'accueil');
-        const pageAccueilObject = pages[accueilContent];
-        document.write(pageAccueilObject.content)
+        document.write(footer);
     </script>
-    <script>document.write(footer);</script>
     <script src="./assets/scripts/functions.js"></script>
 </body>
+
 </html>

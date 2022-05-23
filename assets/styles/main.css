@@ -16,7 +16,7 @@ body .search {
   right: 0;
 }
 body #bandeau {
-  background-image: url("../img/banner.png");
+  background-image: var(--bannerBackground);
   background-position: center;
   background-size: cover;
   min-height: 100px;
@@ -107,4 +107,4 @@ body footer {
   display: flex;
   justify-content: center;
   padding: 3rem;
-}
+}/*# sourceMappingURL=main.css.map */

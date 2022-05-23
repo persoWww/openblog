@@ -1,16 +1,16 @@
-let menuPages = '<a href="index.html">accueil</a>';
+let menuPages = '<a href="./index.html">accueil</a>';
 
 for (let index = 0; index < pages.length; index++) {
     const element = pages[index];
     if (element.title != 'accueil') {
         const newElement = `<a href="./page.html?id=${element.id}">${element.title}</a>`;
-        menuPages = menuPages+newElement;
+        menuPages = menuPages + newElement;
     }
 }
 
 
 let header = `
-<div id="bandeau" onclick="location.href='./'">
+<div id="bandeau" onclick="location.href='./index.html'">
     <h1>${document.title}</h1>
 </div>
 <div class="search">
@@ -20,8 +20,8 @@ let header = `
 <div id="homecontent">`;
 
 
-function S_GET(id){
-    var a = new RegExp(id+"=([^&#=]*)");
+function S_GET(id) {
+    var a = new RegExp(id + "=([^&#=]*)");
     try {
         const result = decodeURIComponent(a.exec(window.location.search)[1]);
         return result;
