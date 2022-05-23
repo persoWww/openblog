@@ -12,7 +12,7 @@ function S_GET(id) {
 function writeCardArticle(article) {
     document.write(`
     <div class="card" onclick="location.href='./article.html?id=${article.id}'">
-        <img src="./assets/img/thumbnails/${article.thumbnail}">
+        <img src="./assets/img/${article.thumbnail}">
         <div class="text">
             <h3 class="title" href="article.html?id=${article.id}">${article.title}</h3>
             <p class="meta">paru le: ${article.date} - ecris par: ${article.author}</p>

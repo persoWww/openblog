@@ -2,7 +2,7 @@
 
 const articles = [{
     title: "notes de la version 1.3 de openblog",
-    thumbnail: '52100gh124r.png',
+    thumbnail: 'banner.jpg',
     id: "52100gh124r",
     date: "2022-05-21",
     author: "dev",
