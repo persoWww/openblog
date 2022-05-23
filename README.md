@@ -33,3 +33,7 @@ créations des variables css et du front system de thumbnails. ajoute la possibi
  - création champ de recherche pour les articles
  - the_content pour la page d'accueil
  - les thumbnails des articles doivent être noté dans data car pouvoir être réutilisé.
+
+ # notes en prévision de la 1.3
+ - suppression de `assets/ico` pour tout mettre dans img.
+ - 
