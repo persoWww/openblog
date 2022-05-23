@@ -11,6 +11,7 @@ for (let index = 0; index < pages.length; index++) {
 
 let header = `
 <div id="bandeau" onclick="location.href='./index.html'">
+    <div id="bandeau__ico"></div>
     <h1>${document.title}</h1>
 </div>
 <div class="search">

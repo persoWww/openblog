@@ -3,7 +3,7 @@
 
  - dans le terminal:
     - `git clone git@github.com:persoWww/openblog.git` ou `git clone https://github.com/persoWww/openblog.git`
-    - `git checkout version_1.2`
+    - `git checkout version_1.3`
 
  - définir le title: dans `/article.html`, `/page.html` et `/index.html` , écrire les balises titles dans les headers.
  - définir la photo en fond de bannière: `/assets/img/banner.png`
@@ -38,7 +38,7 @@ créations des variables css et du front system de thumbnails. ajoute la possibi
  - [x] link vers index réecrites pour utilisation hors server.
  - [x] suppression de `assets/ico` pour tout mettre dans img.
  - [x] création d'un fichier de variables js pour les url d'images logo & banner => dans les variables `root.css`
- - [ ] mise en place d'un logo dans la banière , avec une var associé dans `root.css`
+ - [x] mise en place d'un logo dans la banière , avec une var associé dans `root.css`
  - [ ] revoir l'agencement des fichiers scripts
  - [ ] voir création catégories/tags pour les articles avec menu
  - [ ] voir responsive menu/header

@@ -22,8 +22,14 @@ body #bandeau {
   min-height: 100px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   cursor: pointer;
+}
+body #bandeau #bandeau__ico {
+  background-image: var(--icoUrl);
+  background-size: contain;
+  height: 100px;
+  width: 100px;
 }
 body #bandeau h1 {
   padding: 10px;

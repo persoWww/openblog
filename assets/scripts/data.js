@@ -1,14 +1,13 @@
 // dernier article en haut
 
-const articles = [
-    {
-        title:"notes de la version 1.1 de openblog",
-        thumbnail:'52100gh124r.png',
-        id:"52100gh124r",
-        date:"2022-05-21",
-        author:"dev",
-        acroche:"détails de version, setup, tâches courantes",
-        content:`<pre>
+const articles = [{
+    title: "notes de la version 1.3 de openblog",
+    thumbnail: '52100gh124r.png',
+    id: "52100gh124r",
+    date: "2022-05-21",
+    author: "dev",
+    acroche: "détails de version, setup, tâches courantes",
+    content: `<pre>
         # SETUP
         
          - dans le terminal:
@@ -43,11 +42,9 @@ const articles = [
          - création champ de recherche pour les articles
          - the_content pour la page d'accueil
          - les thumbnails des articles doivent être noté dans data car pouvoir être réutilisé.</pre>`,
-    },
-];
+}, ];
 
-const pages = [
-    {
+const pages = [{
         title: 'a propos',
         id: '201f45',
         date: '2022-05-21',
@@ -55,7 +52,7 @@ const pages = [
         content: `<b>ceci</b> est une page.`,
     },
     {
-        title: 'accueil',
+        title: 'accueil', // le title accueil est un mot clef pour désigner le contenu de la page d'accueil
         id: 'ds2037p4',
         date: '2022-05-22',
         author: 'dev',
