@@ -36,4 +36,8 @@ créations des variables css et du front system de thumbnails. ajoute la possibi
 
  # notes en prévision de la 1.3
  - suppression de `assets/ico` pour tout mettre dans img.
- - 
+ - création d'un fichier de variables js pour les url d'images favicon et banner `settings.js`
+ - mise en place d'un logo dans la banière , avec une var associé dans `settings.js`
+ - revoir l'agencement des fichiers scripts
+ - voir création catégories/tags pour les articles avec menu
+ - voir responsive menu/header
