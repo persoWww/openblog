@@ -43,3 +43,6 @@ créations des variables css et du front system de thumbnails. ajoute la possibi
  - voir responsive menu/header
  - content de index au dessus des cards?
  - quand search, pas de content dans index.
+ - augmenter les variables dans `root.css`, par ex menu droite-centre-gauche, border sur les cards,...
+ - cards entièrement cliqubles.
+ - pour les img/ico d'origines: remplacer par des images dont on es sur qu'elles sont libre de droit (créer une ico/ambiance propre)
