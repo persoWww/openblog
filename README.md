@@ -41,3 +41,5 @@ créations des variables css et du front system de thumbnails. ajoute la possibi
  - revoir l'agencement des fichiers scripts
  - voir création catégories/tags pour les articles avec menu
  - voir responsive menu/header
+ - content de index au dessus des cards?
+ - quand search, pas de content dans index.
