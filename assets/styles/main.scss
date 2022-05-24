@@ -39,7 +39,7 @@ body {
     .menu {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: var(--menuJustifyContent);
         a {
             margin: 2px 7px;
         }

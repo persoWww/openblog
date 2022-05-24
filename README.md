@@ -9,7 +9,7 @@
  - définir le title: dans `/index.html` , écrire la balises titles dans le headers: &lt;title&gt;votre titre&lt;/title&gt;
  - définir la photo en fond de bannière: `/assets/img/banner.png`
  - définir la favicon: `/assets/img/icone.png`
- - optionnel: redéfinir les variables dans `/assets/styles/root.css`
+ - optionnel: redéfinir les variables dans `/settings/root.css`
 
  # fonctionnement régulier
 
@@ -53,6 +53,6 @@ créations des variables css et du front system de thumbnails. ajoute la possibi
  - [ ] voir responsive menu/header
  - [x] voir pour passer les fichiers `index.html`, `article.html` et `page.html` sur 1 seule fichier pour centraliser les données du header. => header et footer ne seraient plus des includes?
     - [x] passer la totalitée des contents en variables js.
- - [ ] voir pour setup plus userFriendly (meilleur doc, meilleur guidage, commentaires, chemins vers les fichiers à modifier)
- - [ ] augmenter les var dans `root.css` => justify-content du menu, margin/padding du content, sticky or not du header, du menu, ...
+ - [x] voir pour setup plus userFriendly (meilleur doc, meilleur guidage, commentaires, chemins vers les fichiers à modifier)
+ - [ ] augmenter les var dans `root.css` => *justify-content du menu*, margin/padding du content, sticky or not du header, du menu, visibility du search, ...
  - [ ] création settings.js => nbr de post sous les articles, nbr de post dans page accueil, activ/désactive thumbnails pour articles.

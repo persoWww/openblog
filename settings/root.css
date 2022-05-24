@@ -10,4 +10,5 @@
     --bannerBackground: url('../img/banner.jpg');
     --icoUrl: url('../img/icone.png');
     --titleAlign: center;
+    --menuJustifyContent: center;
 }
