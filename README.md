@@ -7,7 +7,6 @@
  - ou sans passer par le terminal: téléchargez `https://github.com/persoWww/openblog/archive/refs/heads/version_1.3.zip`
 
  - définir le title: dans `/article.html`, `/page.html` et `/index.html` , écrire les balises titles dans les headers.
- - définir la photo en fond de bannière: `/assets/img/banner.png`
  - définir la favicon: `/assets/img/icone.png`
  - optionnel: redéfinir les variables dans `/assets/styles/root.css`
 
@@ -47,8 +46,3 @@ créations des variables css et du front system de thumbnails. ajoute la possibi
  - [x] cards entièrement cliqubles.
  - [x] pour les img/ico d'origines: remplacer par des images dont on es sur qu'elles sont libre de droit (créer une ico/ambiance propre)
  - [x] thumbnails dans data écrits a partir de img pour géré les dossiers soit-même et éviter les doublons
-
- # notes en préévision de la 1.4
- - [ ] voir création catégories/tags pour les articles avec menu
- - [ ] voir responsive menu/header
- - [ ] voir pour passer les fichiers `index.html`, `article.html` et `page.html` sur 1 seule fichier pour centraliser les données du header.
