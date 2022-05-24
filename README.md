@@ -70,7 +70,9 @@ créations des variables css et du front system de thumbnails. ajoute la possibi
 
 # notes en prévision de la v 1.5
  - [x] scission de data en fichiers multiples
- - [ ] voir création catégories/tags pour les articles avec menu
  - [x] voir responsive menu/header
+ - [x] voir notation markdown, colorisation syntaxe, scroll gestion
+
+ # notes pour la suite...
+ - [ ] voir création catégories/tags pour les articles avec menu
  - [ ] settings.js => nbr de post dans page accueil, activ/désactive thumbnails pour articles.
- - [ ] voir notation markdown, colorisation syntaxe, scroll gestion
