@@ -6,16 +6,18 @@
     - `git checkout version_1.4`
  - ou sans passer par le terminal: téléchargez `https://github.com/persoWww/openblog/archive/refs/heads/version_1.4.zip`
 
- - définir le title: dans `/index.html` , écrire la balises titles dans le headers: &lt;title&gt;votre titre&lt;/title&gt;
- - définir la photo en fond de bannière: `/assets/img/banner.png`
- - définir la favicon: `/assets/img/icone.png`
- - optionnel: redéfinir les variables dans `/settings/root.css`
+ - définir le title: dans `./index.html` , écrire la balises titles dans le headers: &lt;title&gt;votre titre&lt;/title&gt;
+ - définir la photo en fond de bannière: `./assets/img/banner.png`
+ - définir la favicon: `./assets/img/icone.png`
+ - optionnel: redéfinir les variables dans `./settings/root.css`
 
  # fonctionnement régulier
 
   - post d'un article: 
-     - éditer `/assets/scripts/data.js` => contenu page acceueil = page dont le title est accueil.
-     - thumbnail: `/assets/img/thumbnails/cheminEtNomDansData`
+     - éditer `./data/data.js` => contenu page acceueil = page dont le title est accueil.
+        - champ id: n'importe quoi du moment qqu'il n'y en a pas 2 identiques (+1 à chaque fois, code alphanumérique aléatoire...)
+        - date et author: optionnel
+     - thumbnail: `/assets/img/cheminEtNomDansData` (vous pouvez les classer dans des dossiers/sous-dossiers)
 
 # note version 0.1 openblog (2022-05-21)
 adaptation du modèle d'inspiration
