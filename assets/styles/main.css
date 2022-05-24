@@ -14,11 +14,13 @@ body .search {
   position: absolute;
   top: 0;
   right: 0;
+  display: var(--searchDisplay);
 }
 body #bandeau {
   background-image: var(--bannerBackground);
   background-position: center;
   background-size: cover;
+  background-attachment: var(--bandeauBackgroundAttachement);
   min-height: 100px;
   display: flex;
   align-items: center;
@@ -36,29 +38,37 @@ body #bandeau h1 {
   color: var(--titleColor);
   flex: 1;
   text-align: var(--titleAlign);
+  font-family: var(--h1Font);
 }
 body .menu {
   display: flex;
   flex-wrap: wrap;
   justify-content: var(--menuJustifyContent);
+  background-color: var(--bodyback);
+  top: 0;
+  position: var(--menuPosition);
 }
 body .menu a {
   margin: 2px 7px;
 }
 body #homecontent {
   background: var(--backColorContent);
-  border: 1px solid var(--lineColor);
-  padding: 2rem;
-  margin: 1rem;
+  border: var(--homecontentBorder);
+  padding: var(--homecontentPadding);
+  margin: var(--homecontentMargin);
+}
+body #homecontent h1 {
+  font-family: var(--h1FontContent);
 }
 body #homecontent h2 {
   margin: 0px;
   padding: 0px;
+  font-family: var(--h2Font);
 }
 body #homecontent h2.titleOfLastArticles {
   margin: 6rem 0 3rem 0;
   padding-top: 2rem;
-  border-top: 3px double var(--lineColor);
+  border-top: var(--titleOfLastArticlesBorderTop);
 }
 body #homecontent #theThumbnail {
   height: 300px;
@@ -86,6 +96,9 @@ body #homecontent .parentcard .card {
 }
 body #homecontent .parentcard .card:hover {
   color: var(--linkColorHover);
+}
+body #homecontent .parentcard .card h3 {
+  font-family: var(--h3FontCards);
 }
 body #homecontent .parentcard .card .text h3.title {
   font-weight: bolder;

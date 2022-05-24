@@ -50,11 +50,14 @@ créations des variables css et du front system de thumbnails. ajoute la possibi
  - [x] pour les img/ico d'origines: remplacer par des images dont on es sur qu'elles sont libre de droit (créer une ico/ambiance propre)
  - [x] thumbnails dans data écrits a partir de img pour géré les dossiers soit-même et éviter les doublons
 
- # notes de la version 1.4 (en cours de developpement)
- - [ ] voir création catégories/tags pour les articles avec menu
- - [ ] voir responsive menu/header
+ # notes de la version 1.4 (2022-05-24)
  - [x] voir pour passer les fichiers `index.html`, `article.html` et `page.html` sur 1 seule fichier pour centraliser les données du header. => header et footer ne seraient plus des includes?
     - [x] passer la totalitée des contents en variables js.
  - [x] voir pour setup plus userFriendly (meilleur doc, meilleur guidage, commentaires, chemins vers les fichiers à modifier)
- - [ ] augmenter les var dans `root.css` => *justify-content du menu*, margin/padding du content, sticky or not du header, du menu, visibility du search, ...
- - [ ] création settings.js => nbr de post sous les articles, nbr de post dans page accueil, activ/désactive thumbnails pour articles.
+ - [x] augmenter les var dans `root.css` => *justify-content du menu*, *margin/padding du content*, sticky or not du header, du menu, visibility du search, ...
+ - [x] création settings.js => *nbr de post sous les articles*,.
+
+# notes en prévision de la v 1.5
+ - [ ] voir création catégories/tags pour les articles avec menu
+ - [ ] voir responsive menu/header
+ - [ ] settings.js => nbr de post dans page accueil, activ/désactive thumbnails pour articles.

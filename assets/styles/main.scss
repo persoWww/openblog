@@ -13,11 +13,13 @@ body {
         position: absolute;
         top: 0;
         right: 0;
+        display: var(--searchDisplay)
     }
     #bandeau {
         background-image: var(--bannerBackground);
         background-position: center;
         background-size: cover;
+        background-attachment: var(--bandeauBackgroundAttachement);
         min-height: 100px;
         display: flex;
         align-items: center;
@@ -34,28 +36,36 @@ body {
             color: var(--titleColor);
             flex: 1;
             text-align: var(--titleAlign);
+            font-family: var(--h1Font);
         }
     }
     .menu {
         display: flex;
         flex-wrap: wrap;
         justify-content: var(--menuJustifyContent);
+        background-color: var(--bodyback);
+        top: 0;
+        position: var(--menuPosition);
         a {
             margin: 2px 7px;
         }
     }
     #homecontent {
         background: var(--backColorContent);
-        border: 1px solid var(--lineColor);
-        padding: 2rem;
-        margin: 1rem;
+        border: var(--homecontentBorder);
+        padding: var(--homecontentPadding);
+        margin: var(--homecontentMargin);
+        h1 {
+            font-family: var(--h1FontContent);
+        }
         h2 {
             margin: 0px;
             padding: 0px;
+            font-family: var(--h2Font);
             &.titleOfLastArticles {
                 margin: 6rem 0 3rem 0;
                 padding-top: 2rem;
-                border-top: 3px double var(--lineColor);
+                border-top: var(--titleOfLastArticlesBorderTop);
             }
         }
         #theThumbnail {
@@ -82,6 +92,9 @@ body {
                 cursor: pointer;
                 &:hover {
                     color: var(--linkColorHover);
+                }
+                h3 {
+                    font-family: var(--h3FontCards);
                 }
                 .text {
                     h3.title {

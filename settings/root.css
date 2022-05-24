@@ -1,14 +1,33 @@
 :root {
+    /* link color */
     --linkColor: #2424ff;
     --linkColorHover: red;
+    /* lines settings */
     --lineColor: #00b109;
+    --homecontentBorder: 1px solid var(--lineColor);
+    --titleOfLastArticlesBorderTop: 3px double var(--lineColor);
+    /* zones color */
     --bodyback: #c2ffb0;
-    --bodyFont: sans-serif;
     --backColorContent: white;
+    /* fonts color */
     --titleColor: black;
     --bodyFontColor: black;
+    /* fonts family */
+    --bodyFont: sans-serif;
+    --h1Font: var(--bodyFont);
+    --h1FontContent: var(--bodyFont);
+    --h2Font: var(--bodyFont);
+    --h3FontCards: var(--bodyFont);
+    /* img settings */
     --bannerBackground: url('../img/banner.jpg');
     --icoUrl: url('../img/icone.png');
+    /* display and measurement adjustment */
     --titleAlign: center;
     --menuJustifyContent: center;
+    --homecontentMargin: 0.5rem;
+    --homecontentPadding: 1rem;
+    --searchDisplay: block;
+    --bandeauBackgroundAttachement: scroll;
+    --menuPosition: static/* static or sticky */
+    ;
 }

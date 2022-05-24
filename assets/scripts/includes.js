@@ -22,7 +22,7 @@ let header = `
 
 const footer = `</div>
 <footer>
-    <a href="https://github.com/persoWww/openblog/tree/version_1.2">propulsé par openblog version_1.2</a>
+    <a href="https://github.com/persoWww/openblog/tree/version_${settings.version}">propulsé par openblog version_${settings.version}</a>
 </footer>
 </body>
 </html>`;
@@ -34,15 +34,21 @@ let page_index = `<p class="articleContent">
 <script src="./assets/scripts/in_includes/page_index_cards.js"></script>
 </div>`;
 
+let cardInArticle = `
+<h2 class="titleOfLastArticles">Derniers articles:</h2>
+<div class="parentcard">
+<script src="./assets/scripts/in_includes/page_article_cards.js"></script>
+</div>`;
+if (settings.nbrPostUnderArticles === 0) {
+    cardInArticle = ``;
+}
+
 let page_article = `<div id="theThumbnail"></div>
 <h1 id="theTitle"></h1>
 <p class="meta" id="theMeta"></p>
 <p class="articleAcroch" id="theAcroch"></p>
 <p class="articleContent" id="theContent"></p>
-<h2 class="titleOfLastArticles">Derniers articles:</h2>
-<div class="parentcard">
-    <script src="./assets/scripts/in_includes/page_article_cards.js"></script>
-</div>
+${cardInArticle}
 <script src="./assets/scripts/in_includes/page_article_thearticle.js"></script>
 `;
 

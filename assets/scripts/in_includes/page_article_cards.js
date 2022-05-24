@@ -1,4 +1,4 @@
-for (let index = 0; index < 6; index++) {
+for (let index = 0; index < settings.nbrPostUnderArticles; index++) {
     const element = articles[index];
     console.log(index);
     writeCardArticle(element);
