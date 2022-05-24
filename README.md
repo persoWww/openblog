@@ -54,4 +54,4 @@ créations des variables css et du front system de thumbnails. ajoute la possibi
  - [ ] voir pour passer les fichiers `index.html`, `article.html` et `page.html` sur 1 seule fichier pour centraliser les données du header. => header et footer ne seraient plus des includes?
  - [ ] voir pour setup plus userFriendly (meilleur doc, meilleur guidage, commentaires, chemins vers les fichiers à modifier)
  - [ ] augmenter les var dans `root.css` => justify-content du menu, margin/padding du content, sticky or not du header, du menu, ...
- - [ ] 
+ - [ ] création settings.js => nbr de post sous les articles, nbr de post dans page accueil, activ/désactive thumbnails pour articles.
