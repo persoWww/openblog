@@ -27,7 +27,7 @@ ${header_search}
 
 const footer = `</div>
 <footer>
-    <a href="https://github.com/persoWww/openblog/tree/version_${settings.version}">propulsé par openblog version_${settings.version}</a>
+    <a href="https://github.com/persoWww/frontblog/tree/version_${settings.version}">propulsé par frontblog version_${settings.version}</a>
 </footer>
 </body>
 </html>`;

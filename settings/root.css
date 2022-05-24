@@ -1,17 +1,17 @@
 :root {
     /* link color */
-    --linkColor: #2424ff;
-    --linkColorHover: red;
+    --linkColor: #b4b4ff;
+    --linkColorHover: #c593ff;
     /* lines settings */
-    --lineColor: #00b109;
+    --lineColor: rgb(49, 255, 49);
     --homecontentBorder: 1px solid var(--lineColor);
     --titleOfLastArticlesBorderTop: 3px double var(--lineColor);
     /* zones color */
-    --bodyback: #c2ffb0;
-    --backColorContent: white;
+    --bodyback: #3a3a3a;
+    --backColorContent: var(--bodyback);
     /* fonts color */
     --titleColor: black;
-    --bodyFontColor: black;
+    --bodyFontColor: rgb(255, 255, 255);
     /* fonts family */
     --bodyFont: sans-serif;
     --h1Font: var(--bodyFont);
