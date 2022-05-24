@@ -6,8 +6,8 @@ ce petit projet a pour visé de pouvoir autant servir de **"blog" ultra-light** 
 
  - dans le terminal avec git:
     - `git clone git@github.com:persoWww/frontblog.git` ou `git clone https://github.com/persoWww/frontblog.git`
-    - `git checkout version_1.4`
- - ou sans passer par le terminal: téléchargez `https://github.com/persoWww/frontblog/archive/refs/heads/version_1.4.zip`
+    - `git checkout version_1.5`
+ - ou sans passer par le terminal: téléchargez `https://github.com/persoWww/frontblog/archive/refs/heads/version_1.5.zip`
 
  - définir le title: dans `./index.html` , écrire la balises titles dans le headers: &lt;title&gt;votre titre&lt;/title&gt;
  - définir la favicon: `./assets/img/icone.png`
