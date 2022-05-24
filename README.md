@@ -14,13 +14,21 @@ ce petit projet a pour visé de pouvoir autant servir de **"blog" ultra-light** 
  - optionnel: redéfinir les variables dans `./settings/root.css` et `./settings/settings.js`
     - pour les images de fonds de bannières et l'icone, pointez vers des fichiers que vous ajoutez dans `/assets/img/`
 
- # fonctionnement régulier
+# fonctionnement régulier
 
   - post d'un article: 
      - éditer `./data/pages.js` et `./data/articles.js` => contenu page accueil = page dont le title est accueil.
         - champ id: n'importe quoi du moment qu’il n'y en a pas 2 identiques (+1 à chaque fois, code alphanumérique aléatoire...)
         - date et author: optionnel
      - thumbnail: `/assets/img/cheminEtNomDansData` (vous pouvez les classer dans des dossiers/sous-dossiers)
+
+# colorisation syntaxique
+
+prism.js : languages compatibles: (HTML = markup)
+
+markup+css+clike+javascript+bash+docker+json+json5+markdown+markup-templating+mermaid+mongodb+php+plsql+scss+sql
+
+&lt;pre>&lt;code class="language-votreLanguage"&gt;votre code&lt;/code&gt;&lt;/pre&gt;
 
 # note version 0.1 openblog (2022-05-21)
 adaptation du modèle d'inspiration
