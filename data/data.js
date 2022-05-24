@@ -7,7 +7,13 @@ const articles = [{
     date: "2022-05-24",
     author: "dev",
     acroche: "détails de version, setup, tâches courantes",
-    content: `<pre>
+    content: `
+    <h3>a propos</h3>
+    <p>
+        ce petit projet a pour visé de pouvoir autant servir de <b>"blog" ultra-light</b> sur un server http (<b>sans back</b>), que servir à créer une interface de bloc-note, de présentation, de documentation, sous la forme d'un simple dossier que l'on ouvre avec un navigateur (clique droit sur ./index.html => ouvrir avec => votre navigateur) <b>en dehors de tout serveur</b>. Du fait qu'il n'utilise pas de code back, les articles s'écrivent dans une variable javascript, à même le fichier. L'utilisation de ce projet nécessite donc de ne pas avoir des bouttons à la vue de quelques lignes de codes, mais ne nécessite pas non-plus de maitrisé javaScript.
+    </p>
+    
+    <pre>
 # SETUP
 
     - dans le terminal avec git:
