@@ -10,15 +10,15 @@ const articles = [{
     content: `<pre>
 # SETUP
 
-- dans le terminal avec git:
-    - 'git clone git@github.com:persoWww/openblog.git' ou 'git clone https://github.com/persoWww/openblog.git'
-    - 'git checkout version_${settings.version}'
-- ou sans passer par le terminal: téléchargez 'https://github.com/persoWww/openblog/archive/refs/heads/version_${settings.version}.zip'
+    - dans le terminal avec git:
+        - 'git clone git@github.com:persoWww/openblog.git' ou 'git clone https://github.com/persoWww/openblog.git'
+        - 'git checkout version_${settings.version}'
+    - ou sans passer par le terminal: téléchargez 'https://github.com/persoWww/openblog/archive/refs/heads/version_${settings.version}.zip'
 
-- définir le title: dans './index.html' , écrire la balises titles dans le headers: &lt;title&gt;votre titre&lt;/title&gt;
-- définir la photo en fond de bannière: './assets/img/banner.png'
-- définir la favicon: './assets/img/icone.png'
-- optionnel: redéfinir les variables dans './settings/root.css'
+    - définir le title: dans './index.html' , écrire la balises titles dans le headers: &lt;title&gt;votre titre&lt;/title&gt;
+    - définir la favicon: './assets/img/icone.png'
+    - optionnel: redéfinir les variables dans './settings/root.css'
+        - pour les images de fonds de bannières et l'icone, pointez vers des fichiers que vous ajoutez dans '/assets/img/'
 
 # fonctionnement régulier
 

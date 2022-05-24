@@ -7,9 +7,9 @@
  - ou sans passer par le terminal: téléchargez `https://github.com/persoWww/openblog/archive/refs/heads/version_1.4.zip`
 
  - définir le title: dans `./index.html` , écrire la balises titles dans le headers: &lt;title&gt;votre titre&lt;/title&gt;
- - définir la photo en fond de bannière: `./assets/img/banner.png`
  - définir la favicon: `./assets/img/icone.png`
  - optionnel: redéfinir les variables dans `./settings/root.css`
+    - pour les images de fonds de bannières et l'icone, pointez vers des fichiers que vous ajoutez dans `/assets/img/`
 
  # fonctionnement régulier
 
