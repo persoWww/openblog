@@ -5,9 +5,9 @@ ce petit projet a pour visé de pouvoir autant servir de **"blog" ultra-light** 
 # SETUP
 
  - dans le terminal avec git:
-    - `git clone git@github.com:persoWww/openblog.git` ou `git clone https://github.com/persoWww/openblog.git`
+    - `git clone git@github.com:persoWww/frontblog.git` ou `git clone https://github.com/persoWww/frontblog.git`
     - `git checkout version_1.4`
- - ou sans passer par le terminal: téléchargez `https://github.com/persoWww/openblog/archive/refs/heads/version_1.4.zip`
+ - ou sans passer par le terminal: téléchargez `https://github.com/persoWww/frontblog/archive/refs/heads/version_1.4.zip`
 
  - définir le title: dans `./index.html` , écrire la balises titles dans le headers: &lt;title&gt;votre titre&lt;/title&gt;
  - définir la favicon: `./assets/img/icone.png`
@@ -17,8 +17,8 @@ ce petit projet a pour visé de pouvoir autant servir de **"blog" ultra-light** 
  # fonctionnement régulier
 
   - post d'un article: 
-     - éditer `./data/data.js` => contenu page acceueil = page dont le title est accueil.
-        - champ id: n'importe quoi du moment qqu'il n'y en a pas 2 identiques (+1 à chaque fois, code alphanumérique aléatoire...)
+     - éditer `./data/pages.js` et `./data/articles.js` => contenu page accueil = page dont le title est accueil.
+        - champ id: n'importe quoi du moment qu’il n'y en a pas 2 identiques (+1 à chaque fois, code alphanumérique aléatoire...)
         - date et author: optionnel
      - thumbnail: `/assets/img/cheminEtNomDansData` (vous pouvez les classer dans des dossiers/sous-dossiers)
 
@@ -61,6 +61,8 @@ créations des variables css et du front system de thumbnails. ajoute la possibi
  - [x] création settings.js => *nbr de post sous les articles*,.
 
 # notes en prévision de la v 1.5
+ - [x] scission de data en fichiers multiples
  - [ ] voir création catégories/tags pour les articles avec menu
- - [ ] voir responsive menu/header
+ - [x] voir responsive menu/header
  - [ ] settings.js => nbr de post dans page accueil, activ/désactive thumbnails pour articles.
+ - [ ] voir notation markdown, colorisation syntaxe, scroll gestion

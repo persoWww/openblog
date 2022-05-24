@@ -74,6 +74,12 @@ body {
             background-repeat: no-repeat;
             background-position: center left;
         }
+        #theContent{
+            >*{
+                max-width: 100%;
+                overflow-x: auto;
+            }
+        }
         .parentcard {
             display: flex;
             flex-wrap: wrap;

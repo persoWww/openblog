@@ -76,6 +76,10 @@ body #homecontent #theThumbnail {
   background-repeat: no-repeat;
   background-position: center left;
 }
+body #homecontent #theContent > * {
+  max-width: 100%;
+  overflow-x: auto;
+}
 body #homecontent .parentcard {
   display: flex;
   flex-wrap: wrap;
@@ -132,4 +136,4 @@ body footer {
   display: flex;
   justify-content: center;
   padding: 3rem;
-}/*# sourceMappingURL=main.css.map */
+}
