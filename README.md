@@ -3,8 +3,8 @@
 
  - dans le terminal avec git:
     - `git clone git@github.com:persoWww/openblog.git` ou `git clone https://github.com/persoWww/openblog.git`
-    - `git checkout version_1.3`
- - ou sans passer par le terminal: téléchargez `https://github.com/persoWww/openblog/archive/refs/heads/version_1.3.zip`
+    - `git checkout version_1.4`
+ - ou sans passer par le terminal: téléchargez `https://github.com/persoWww/openblog/archive/refs/heads/version_1.4.zip`
 
  - définir le title: dans `/index.html` , écrire la balises titles dans le headers: &lt;title&gt;votre titre&lt;/title&gt;
  - définir la photo en fond de bannière: `/assets/img/banner.png`
@@ -48,7 +48,7 @@ créations des variables css et du front system de thumbnails. ajoute la possibi
  - [x] pour les img/ico d'origines: remplacer par des images dont on es sur qu'elles sont libre de droit (créer une ico/ambiance propre)
  - [x] thumbnails dans data écrits a partir de img pour géré les dossiers soit-même et éviter les doublons
 
- # notes en prévision de la 1.4
+ # notes de la version 1.4 (en cours de developpement)
  - [ ] voir création catégories/tags pour les articles avec menu
  - [ ] voir responsive menu/header
  - [x] voir pour passer les fichiers `index.html`, `article.html` et `page.html` sur 1 seule fichier pour centraliser les données du header. => header et footer ne seraient plus des includes?
