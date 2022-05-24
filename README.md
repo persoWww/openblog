@@ -1,3 +1,6 @@
+# a propos
+
+ce petit projet a pour visé de pouvoir autant servir de **"blog" ultra-light** sur un server http (**sans back**) que servir à créer une **interface de bloc-note**, de dossier, sous la forme d'un simple dossier que l'on ouvre avec un navigateur (clique droit sur ./index.html => ouvrir avec => votre navigateur) **en dehors de tout serveur**. Du fait qu'il n'utilise pas de code back, les articles s'écrivent dans une variable javascript, à même le fichier. L'utilisation de ce projet nécessite donc de ne pas avoir des bouttons à la vue de quelques lignes de codes, mais ne nécessite pas non-plus de maitrisé javaScript.
 
 # SETUP
 
