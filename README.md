@@ -8,7 +8,7 @@
 
  - définir le title: dans `./index.html` , écrire la balises titles dans le headers: &lt;title&gt;votre titre&lt;/title&gt;
  - définir la favicon: `./assets/img/icone.png`
- - optionnel: redéfinir les variables dans `./settings/root.css`
+ - optionnel: redéfinir les variables dans `./settings/root.css` et `./settings/settings.js`
     - pour les images de fonds de bannières et l'icone, pointez vers des fichiers que vous ajoutez dans `/assets/img/`
 
  # fonctionnement régulier
