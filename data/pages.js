@@ -10,6 +10,6 @@ const pages = [{
     id: 'ds2037p4',
     date: '2022-05-22',
     author: 'dev',
-    content: `hello! ceci est le contenu de la page d'accueil`,
+    content: ``,
 },
 ];
