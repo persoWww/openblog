@@ -17,44 +17,15 @@
 <body>
     <script>
         document.write(header);
-    </script>
-    <p class="articleContent">
-        <script>
-            const theSearch = S_GET("s");
-            console.log(theSearch);
-            if (theSearch === '') {
-                const accueilContent = pages.findIndex((pages) => pages.title === 'accueil');
-                const pageAccueilObject = pages[accueilContent];
-                document.write(pageAccueilObject.content)
-            }
-        </script>
-    </p>
-    <div class="parentcard">
-        <script>
-            if (theSearch === '') {
-                for (let index = 0; index < articles.length; index++) {
-                    const element = articles[index];
-                    writeCardArticle(element);
-                }
-            } else {
-                let selectedArticles = [];
-                for (let index = 0; index < articles.length; index++) {
-                    const element = articles[index];
-                    if (element.title.indexOf(theSearch) != -1 ||
-                        element.author.indexOf(theSearch) != -1 ||
-                        element.acroche.indexOf(theSearch) != -1 ||
-                        element.content.indexOf(theSearch) != -1) {
-                        selectedArticles.push(element);
-                    }
-                }
-                for (let index = 0; index < selectedArticles.length; index++) {
-                    const element = selectedArticles[index];
-                    writeCardArticle(element);
-                }
-            }
-        </script>
-    </div>
-    <script>
+        if (S_GET('page') === '' || S_GET('page') === 'index') {
+            document.write(page_index);
+        } else if (S_GET('page') === 'article') {
+            document.write(page_article);
+        } else if (S_GET('page') === 'page') {
+            document.write(page_page);
+        } else {
+            document.write(page_index);
+        }
         document.write(footer);
     </script>
     <script src="./assets/scripts/domevent.js"></script>

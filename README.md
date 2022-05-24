@@ -6,7 +6,7 @@
     - `git checkout version_1.3`
  - ou sans passer par le terminal: téléchargez `https://github.com/persoWww/openblog/archive/refs/heads/version_1.3.zip`
 
- - définir le title: dans `/article.html`, `/page.html` et `/index.html` , écrire les balises titles dans les headers.
+ - définir le title: dans `/index.html` , écrire la balises titles dans le headers: &lt;title&gt;votre titre&lt;/title&gt;
  - définir la photo en fond de bannière: `/assets/img/banner.png`
  - définir la favicon: `/assets/img/icone.png`
  - optionnel: redéfinir les variables dans `/assets/styles/root.css`
@@ -51,7 +51,8 @@ créations des variables css et du front system de thumbnails. ajoute la possibi
  # notes en prévision de la 1.4
  - [ ] voir création catégories/tags pour les articles avec menu
  - [ ] voir responsive menu/header
- - [ ] voir pour passer les fichiers `index.html`, `article.html` et `page.html` sur 1 seule fichier pour centraliser les données du header. => header et footer ne seraient plus des includes?
+ - [x] voir pour passer les fichiers `index.html`, `article.html` et `page.html` sur 1 seule fichier pour centraliser les données du header. => header et footer ne seraient plus des includes?
+    - [x] passer la totalitée des contents en variables js.
  - [ ] voir pour setup plus userFriendly (meilleur doc, meilleur guidage, commentaires, chemins vers les fichiers à modifier)
  - [ ] augmenter les var dans `root.css` => justify-content du menu, margin/padding du content, sticky or not du header, du menu, ...
  - [ ] création settings.js => nbr de post sous les articles, nbr de post dans page accueil, activ/désactive thumbnails pour articles.

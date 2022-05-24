@@ -11,7 +11,7 @@ function S_GET(id) {
 
 function writeCardArticle(article) {
     document.write(`
-    <div class="card" onclick="location.href='./article.html?id=${article.id}'">
+    <div class="card" onclick="location.href='./index.html?page=article&id=${article.id}'">
         <img src="./assets/img/${article.thumbnail}">
         <div class="text">
             <h3 class="title" href="article.html?id=${article.id}">${article.title}</h3>
