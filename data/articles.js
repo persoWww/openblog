@@ -1,8 +1,8 @@
 // dernier article en haut
 
 const articles = [{
-    title: `a propos de openblog`,
-    thumbnail: 'banner.jpg',
+    title: `a propos de frontblog`,
+    thumbnail: 'presentation.png',
     id: "52100gh124r",
     date: "2022-05-24",
     author: "dev",
@@ -15,8 +15,8 @@ const articles = [{
     <a href="./index.html?page=article&id=SD4520GG32"><h1>get started!</h1></a>`,
 },
 {
-    title: `set-up de openblog`,
-    thumbnail: 'banner.jpg',
+    title: `set-up de frontblog`,
+    thumbnail: 'getstarted.png',
     id: "SD4520GG32",
     date: "2022-05-24",
     author: "dev",
@@ -38,8 +38,8 @@ const articles = [{
 <a href="./index.html?page=article&id=G120236G"><h1>postez des pages et des articles</h1></a>`,
 },
 {
-    title: `opérations régulières de openblog`,
-    thumbnail: 'banner.jpg',
+    title: `opérations régulières de frontblog`,
+    thumbnail: 'regularoperations.png',
     id: "G120236G",
     date: "2022-05-24",
     author: "dev",
@@ -87,7 +87,7 @@ const articles = [{
 },
 {
     title: `liens vers autre chose que des pages du blog dans le menu`,
-    thumbnail: 'banner.jpg',
+    thumbnail: 'link.png',
     id: "SD3554",
     date: "2022-05-24",
     author: "dev",
@@ -97,8 +97,8 @@ const articles = [{
     <p>Ainsi, vous pouvez créer des liens vers n'importe quel URL. Pour des liens internes au site (articles, pdf, images, videos,...) il est conseillé de mettre des liens relatif.</p>`,
 },
 {
-    title: `colorisation syntaxique de openblog`,
-    thumbnail: 'banner.jpg',
+    title: `colorisation syntaxique de frontblog`,
+    thumbnail: 'coding-language.png',
     id: "DF4587996",
     date: "2022-05-24",
     author: "dev",
@@ -110,7 +110,7 @@ const articles = [{
     <code class="language-markup">&lt;code class="language-votreLanguage"&gt;votre code&lt;/code&gt;</code>
     <p>voici la liste des languages:</p>
     <pre><code class="language-php">
-class="markup" (HTML)
+class="language-markup" (HTML)
 class="language-css"
 class="language-clike"
 class="language-javascript"
@@ -126,5 +126,6 @@ class="language-php"
 class="language-plsql"
 class="language-scss"
 class="language-sql"
-    </code></pre>`,
+    </code></pre>
+    <p><b>Note:</b> si vous cherchez la colorisation pour un language qui n'est pas dans la liste, vous pouvez soit utilisé une colorisation d'un language existant dont le résultat serait assez proche de ce qui est rechercher, soit rendez-vous sur <a href="https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript">prism download</a> , cocher les languages qui vous intéressent , téléchargez et remplacer les fichiers <code class="language-bash">/assets/scripts/prism.js</code> et <code class="language-bash">/assets/styles/prism.css</code>.</p>`,
 },  ];
