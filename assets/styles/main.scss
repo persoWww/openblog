@@ -39,6 +39,7 @@ body {
         }
     }
     .menu {
+        z-index: 9999;
         display: flex;
         flex-wrap: wrap;
         justify-content: var(--menuJustifyContent);

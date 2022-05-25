@@ -40,6 +40,7 @@ body #bandeau h1 {
   font-family: var(--h1Font);
 }
 body .menu {
+  z-index: 9999;
   display: flex;
   flex-wrap: wrap;
   justify-content: var(--menuJustifyContent);
