@@ -27,6 +27,6 @@
     --homecontentMargin: 0.5rem;
     --homecontentPadding: 1rem;
     --bandeauBackgroundAttachement: scroll;
-    --menuPosition: static/* static or sticky */
+    --menuPosition: sticky/* static or sticky */
     ;
 }
